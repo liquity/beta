@@ -1,6 +1,6 @@
-# Liquity smart contracts bug bounty
+# Liquity smart contracts bug bounty program
 
-A bug bounty for the smart contracts of the Liquity protocol is now live. We intend for hackers to look for smart contract vulnerabilities in our system that can lead to loss of funds or locked components.
+A bug bounty program for the smart contracts of the Liquity protocol is now live. We intend for hackers to look for smart contract vulnerabilities in our system that can lead to loss of funds or locked components.
 
 ## Rewards
 
@@ -30,7 +30,7 @@ The bug bounty program is ongoing and has been running since February 19th, 2021
 Please responsibly disclose any findings to the development team, following these instructions:
 
 - In order to report a vulnerability, please write an email to `security@liquity.org` with [SECURITY DISCLOSURE] in the subject of the email.
-- For sensitive vulnerabilities, please the encrypt the email using this [PGP key](https://keys.openpgp.org/vks/v1/by-fingerprint/3F21FFCDAD2A7D5B8E113198FCE791AE1A6F4793) (Fingerprint: `FCE7 91AE 1A6F 4793`)
+- For sensitive vulnerabilities, please encrypt the email using this [PGP key](https://keys.openpgp.org/vks/v1/by-fingerprint/3F21FFCDAD2A7D5B8E113198FCE791AE1A6F4793) (Fingerprint: `FCE7 91AE 1A6F 4793`)
 - We will make our best effort to reply in a timely manner and provide a timeline for resolution.
 - Please include a detailed report on the vulnerability with clear reproduction steps. The quality of the report can impact the reward amount.
 
@@ -47,7 +47,7 @@ Solidity code under the `contracts` directory:
 - Excluding `contracts/Dependencies`
 - Excluding `contracts/LPRewards/Dependencies`
 
-The contract `StabilityPool.sol` is not yet released and therefore out of scope. Nevertheless, there’s the interface for it, `Interfaces/IStabilityPool.sol`, which includes an descriptions for the contract purpose and for each function. A  high level description can also be fount in [the README file](./README.md#the-stability-pool)
+The contract `StabilityPool.sol` is not yet released and therefore out of scope. Nevertheless, we have published the interface for it, `Interfaces/IStabilityPool.sol`, which includes descriptions for the contract's purpose and for each function. A high level description can also be found in [the README file](./README.md#the-stability-pool)
 
 ## Out of scope
 
