@@ -6,16 +6,16 @@ A bug bounty program for the smart contracts of the Liquity protocol is now live
 
 Vulnerability reports will be scored using the  [CVSS v3](https://www.first.org/cvss/) standard. The reward amounts for different types of vulnerabilities are:
 
-### :bug: "**Critical** (CVSS 9.0 - 10.0)"
+### :rotating_light: "**Critical** (CVSS 9.0 - 10.0)"
     $5,000 - $50,000
 
-### :rotating_light: "**Major** (CVSS 7.0 - 8.9)"
+### :warning: "**Major** (CVSS 7.0 - 8.9)"
     $2,500 - $5,000
 
 ### :zap: "**Medium** (CVSS 4.0 - 6.9)"
     $1,000 - $2,500
 
-### :warning: "**Low** (CVSS 1.0 - 3.9)"
+### :bug: "**Low** (CVSS 1.0 - 3.9)"
     $500 - $1,000
 
 Rewards will be awarded at the sole discretion of Liquity AG. Quality of the report and reproduction instructions can impact the reward. Rewards are denominated and paid out in USD. If both parties agree, rewards can also be paid out in crypto.
