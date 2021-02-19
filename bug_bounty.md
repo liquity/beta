@@ -18,7 +18,7 @@ Vulnerability reports will be scored using the  [CVSS v3](https://www.first.org/
 ### :warning: "**Low** (CVSS 1.0 - 3.9)"
     $500 - $1,000
 
-Rewards will be awarded at the sole discretion of Liquity AG. Quality of the report and reproduction instructions can impact the reward. Rewards are denominated and paid out in USD.
+Rewards will be awarded at the sole discretion of Liquity AG. Quality of the report and reproduction instructions can impact the reward. Rewards are denominated and paid out in USD. If both parties agree, rewards can also be paid out in crypto.
 
 For this initial bug bounty program, there is a **maximum bounty pool of $250,000**.
 
