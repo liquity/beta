@@ -2,12 +2,14 @@
 
 pragma solidity 0.6.11;
 
-import "./Interfaces/IBorrowerOperations.sol";
-import "./Interfaces/IERC20.sol";
+import "../Dependencies/CheckContract.sol";
+import "../Interfaces/IBorrowerOperations.sol";
+import "../Dependencies/IERC20.sol";
+
 
 contract BorrowerOperationsScript {
     IBorrowerOperations immutable borrowerOperations;
-    address LUSD;
+    address immutable LUSD;
 
     constructor(IBorrowerOperations _borrowerOperations, address _LUSD) public {
         borrowerOperations = _borrowerOperations;
