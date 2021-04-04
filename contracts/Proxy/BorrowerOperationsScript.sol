@@ -10,6 +10,17 @@ import "../Dependencies/IERC20.sol";
 contract BorrowerOperationsScript is CheckContract {
     IBorrowerOperations immutable borrowerOperations;
     address immutable LUSD;
+    
+    function LUSD_Join(
+        address _From,
+        address _Amount
+    ) private {
+        // Gets LUSD from the user's wallet
+        IERC20(LUSD).transferFrom(_From, address(this), _Amount);
+        // Approves Operations to take the LUSD amount
+        IERC20(LUSD).approve(address(borrowerOperations), _Amount);
+    }
+
 
     constructor(IBorrowerOperations _borrowerOperations, address _LUSD) public {
         checkContract(address(_borrowerOperations));
@@ -48,9 +59,9 @@ contract BorrowerOperationsScript is CheckContract {
     }
 
     function closeTroveAndFreeETH(uint _debtAmount,uint _collAmount,address payable _collreceiver) external {
-        IERC20(LUSD).approve(address(borrowerOperations), _debtAmount);
+        LUSD_Join(msg.sender, _debtAmount);
         borrowerOperations.closeTrove();
-        if (_collreceiver != address(this)) _collreceiver.transfer(_collAmount);
+        _collreceiver.transfer(_collAmount);
     }
 
     function adjustTrove(uint _maxFee, uint _collWithdrawal, uint _debtChange, bool isDebtIncrease, address _upperHint, address _lowerHint) external payable {
