@@ -58,10 +58,10 @@ contract BorrowerOperationsScript is CheckContract {
         borrowerOperations.closeTrove();
     }
 
-    function closeTroveAndFreeETH(uint _debtAmount,uint _collAmount,address payable _collreceiver) external {
+    function closeTroveAndFreeETH(uint _debtAmount,uint _collAmount) external {
         LUSD_Join(msg.sender, _debtAmount);
         borrowerOperations.closeTrove();
-        _collreceiver.transfer(_collAmount);
+        msg.sender.transfer(_collAmount);
     }
 
     function adjustTrove(uint _maxFee, uint _collWithdrawal, uint _debtChange, bool isDebtIncrease, address _upperHint, address _lowerHint) external payable {
